@@ -6,7 +6,7 @@
 
 `Eixo 1`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+E-commerce de fácil usabilidade, que possibilita a venda de produtos e também seja uma forma de divulgação de empresas do ramo de roupas e acessórios.
 
 ## Integrantes
 
