@@ -8,6 +8,8 @@
 
 E-commerce de fácil usabilidade, que possibilita a venda de produtos e também seja uma forma de divulgação de empresas do ramo de roupas e acessórios.
 
+Teste
+
 ## Integrantes
 
 * Arthur Ferreira De Freitas
@@ -24,7 +26,7 @@ E-commerce de fácil usabilidade, que possibilita a venda de produtos e também 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação. 
 
 # Documentação
 
