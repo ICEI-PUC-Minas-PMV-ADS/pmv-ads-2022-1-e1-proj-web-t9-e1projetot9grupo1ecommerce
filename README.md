@@ -8,8 +8,6 @@
 
 E-commerce de fácil usabilidade, que possibilita a venda de produtos e também seja uma forma de divulgação de empresas do ramo de roupas e acessórios.
 
-Teste
-
 ## Integrantes
 
 * Arthur Ferreira De Freitas
