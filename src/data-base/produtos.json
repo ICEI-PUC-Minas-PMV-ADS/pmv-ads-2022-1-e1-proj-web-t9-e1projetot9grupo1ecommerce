@@ -1,0 +1,32 @@
+{
+    "blusas": [
+        {
+            "id": 1,
+            "descricao": "",
+            "preco": 0,
+            "imagem": "",
+            "estoque": 0,
+            "cores": [
+                {
+                    "titulo": "Branco",
+                    "hexadecimal": "#FFFFFF"
+                }
+            ],
+            "tamanhos": [
+                "PP", "P", "M", "G", "GG"
+            ],
+            "especificacoes": [
+                {
+                    "titulo": "",
+                    "descricao": ""
+                }
+            ]
+        }
+    ],
+    "calcas": [
+
+    ],
+    "acessorios": [
+
+    ]
+}
