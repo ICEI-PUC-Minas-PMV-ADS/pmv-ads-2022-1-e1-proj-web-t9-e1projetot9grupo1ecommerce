@@ -7,3 +7,54 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+
+/* Header */
+
+*{
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    width: 100%;
+    background-color: #284C31
+
+}
+
+.cabecalho-imagem {
+    width: 140px;
+   
+}
+
+ul,.cabecalho-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.itens-menu-cabecalho a {
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.cabecalho-menu-item {
+    color: #f1ede3;
+    font-weight: 400px;
+    font-size: 20px;
+}
+
+.itens-header{
+    display: flex;
+    gap: 10px;
+}
+
+.cart, .user{
+    color: white;
+}
+
+.input-header{
+    margin-right: -35px;
+}
