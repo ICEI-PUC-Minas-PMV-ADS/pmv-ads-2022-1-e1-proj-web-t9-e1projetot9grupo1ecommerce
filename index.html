@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,54 +12,46 @@
     <script src="https://kit.fontawesome.com/94b713f2cc.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
-    
 
-        <header class="cabecalho">
-            <h1 class="cabecalho-imagem">LOGOTIPO </h1> 
+<body>
+
+
+    <header class="cabecalho">
+
+        <!-- Logotipo e itens -->
+        <div class="wrapper-header">
+            <h1 class="cabecalho-imagem">LOGOTIPO </h1>
             <nav class="cabecalho-menu">
-                <ul class= "itens-menu-cabecalho">
-                <li><a class="cabecalho-menu-item" href="#"> Roupas </a></li>
-                <li><a class="cabecalho-menu-item" href="#"> Acessórios</a></li>
-                <li><a class="cabecalho-menu-item" href="#"> Categoria 1</a></li>
-                <li><a class="cabecalho-menu-item" href="#"> Categoria 2</a></li>
-                <li><a class="cabecalho-menu-item" href="#"> Categoria 3</a></li>
-                </ul>   
-            </nav>
-            <div class="input-header">
-                <input type="text" placeholder="O que você procura?" autocomplete="off">
-            </div>
-            <div class="itens-header">
-                
-                <i class="fa-solid fa-circle-user user"></i>
-                <i class="fa-solid fa-bag-shopping cart"><span> 0 </span></i> </h1>
-               
-               
-            </div>
-       
-        <!-- <div class="logo">
-            <h1>Logo</h1>
-        </div>
-        <div class="menu">
-            <nav class="menu-nav-header">
-                <ul class="menu-header">
-                    <li>item1</li>
-                    <li>item2</li>
-                    <li>item3</li>
-                    <li>item4</li>
+                <ul class="itens-menu-cabecalho">
+                    <li><a class="cabecalho-menu-item" href="#"> Roupas </a></li>
+                    <li><a class="cabecalho-menu-item" href="#"> Acessórios</a></li>
+                    <li><a class="cabecalho-menu-item" href="#"> Categoria 1</a></li>
+                    <li><a class="cabecalho-menu-item" href="#"> Categoria 2</a></li>
+                    <li><a class="cabecalho-menu-item" href="#"> Categoria 3</a></li>
                 </ul>
             </nav>
+            <div class="input-header">
+
+        <!-- Campo de busca -->
+                <form class="input-header" method="get">
+                    <input type="text" placeholder="O que você procura?" autocomplete="off" id="campo-busca-header">
+                    <button type="submit" class="search-icon" for="campo-busca-header">
+                        <i class="fa-solid fa-magnifying-glass search-icon">
+                        </i></button>
+                </form>
+            </div>
+
+        <!-- Ícones bag e user -->
+            <div class="itens-header">
+                <a href="#"><i class="fa-solid fa-circle-user user"></i></a>
+                <a href="#"> <i class="fa-solid fa-bag-shopping cart"><span> 0 </span></i></a>
+            </div>
         </div>
-         
-        <div class="itens">
-            <h1>carrinho</h1>
-            <h1>login</h1>
-        </div> -->
     </header>
 
-    
+
     <main>
-            Teste
+        Teste
     </main>
 
 
@@ -66,4 +59,5 @@
 
     </footer>
 </body>
+
 </html>
