@@ -131,8 +131,14 @@ ul,.cabecalho-menu {
     
   }
 
+
+/* --------------- MAIN ---------------*/
+.main {
+    height: 400px;
+}
+
 /* --------------- FOOTER ---------------*/
-
-
-
-/*---------------- RESPONSIVIDADE PÁGINA ---------------- */
+.rodape {
+    height: 210px;
+    background-color: #284C31;
+}
