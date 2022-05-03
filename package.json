@@ -1,0 +1,25 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "`Tecnologia em Análise e Desenvolvimento de Sistemas`",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t9-e1projetot9grupo1ecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t9-e1projetot9grupo1ecommerce/issues"
+  },
+  "homepage": "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t9-e1projetot9grupo1ecommerce#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
