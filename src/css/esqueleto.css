@@ -134,15 +134,69 @@ ul,.cabecalho-menu {
 
 /* --------------- MAIN ---------------*/
 .main {
-    height: 400px;
+    height: calc(100vh - 80px - 230px);
+    overflow: auto;
 }
 
 /* --------------- FOOTER ---------------*/
 .rodape {
-    height: 210px;
+    height: 230px;
     background-color: #284C31;
+    color: white;
 }
 
+/* BLOCO CADASTRE E RECEBA OFERTA */
+.bloco-cadastre-ofertas {
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    place-content: space-around;
+    border-bottom: 1px solid white;
+}
+
+.titulo-cadastre-ofertas h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.titulo-cadastre-ofertas h4 {
+    font-size: 16px;
+}
+
+.form-cadastre-ofertas .input-nome-cadastre-ofertas, .form-cadastre-ofertas .input-email-cadastre-ofertas {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 220px;
+}
+.form-cadastre-ofertas input:first-child {
+    margin-right: 30px;
+}
+.form-cadastre-ofertas input:focus {
+    outline: none;
+}
+
+.btn-cadastre-ofertas {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #2F4F4F;
+    border: 1px solid white;
+    color: white;
+    transition: opacity 0.2s ease-in-out;
+}
+.btn-cadastre-ofertas:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.btn-cadastre-ofertas i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+/* RODAPE BRENO */
 .alinhado{
     display: inline-block
 }

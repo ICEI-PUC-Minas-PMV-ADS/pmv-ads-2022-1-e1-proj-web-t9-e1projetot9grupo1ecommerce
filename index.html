@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+    <script src="/index.js"></script>
 
     <header class="cabecalho">
 
@@ -56,25 +56,21 @@
 
 
     <footer class="rodape">
-        <div class="paiSuperiorFooter">
-            <div class="superiorFooter">
-                <p>PARA RECEBER NOSSAS OFERTAS</p>
+
+        <div class="bloco-cadastre-ofertas">
+            <div class="titulo-cadastre-ofertas">
+                <h3>Cadastra-se</h3>
+                <h4>E receba nossas ofertas</h4>
             </div>
 
-            <div class="superiorFooter">
-                <form>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" />
-                </form>
-            </div>
+            <form id="form-cadastre-ofertas" class="form-cadastre-ofertas">
+                <input type="text" id="nome-cadastre-ofertas" class="input-nome-cadastre-ofertas" title="Nome" placeholder="Nome"/>
+                <input type="email" id="email-cadastre-ofertas" class="input-email-cadastre-ofertas" title="E-mail" placeholder="E-mail"/>
+            </form>
 
-            <div class="superiorFooter">
-                <form>
-                    <label for="Email">Email:</label>
-                    <input type="email" id="Email" />
-                </form>
-                <button> Cadastrar </button>
-            </div>
+            <button id="btn-cadastre-ofertas" class="btn-cadastre-ofertas" onclick="enviarCadastroOfertas()" title="Cadastrar">
+                <i class="fa-solid fa-envelope"></i> Cadastrar
+            </button>
         </div>
 
         <div class="paiInferiorFooter">
