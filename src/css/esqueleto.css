@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    width: 100%;
 }
 
 *{
@@ -130,4 +131,14 @@ ul,.cabecalho-menu {
     
   }
 
+
+/* --------------- MAIN ---------------*/
+.main {
+    height: 400px;
+}
+
 /* --------------- FOOTER ---------------*/
+.rodape {
+    height: 210px;
+    background-color: #284C31;
+}
