@@ -4,28 +4,3 @@
 *{
     box-sizing: border-box;
 }
-
-.alinhado{
-    display: inline-block
-}
-.margemEsquerda{
-    margin-left: 30px;
-}
-
-.paiInferiorFooter{
-    width: 100%;
-}
-.inferiorFooter{
-    width: 32%;
-    text-align: center;
-    display: inline-block;
-}
-.paiSuperiorFooter {  
-    width: 100%;
-}
-
-.superiorFooter {
-    width: 30%;
-    text-align: center;
-    display: inline-block;
-}

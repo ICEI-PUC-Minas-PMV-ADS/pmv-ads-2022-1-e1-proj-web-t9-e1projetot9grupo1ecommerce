@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-COMMERCE</title>
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/esqueleto.css">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/esqueleto.css">
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/94b713f2cc.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-
+    <script src="/index.js"></script>
 
     <header class="cabecalho">
 
@@ -32,7 +32,7 @@
             </nav>
             <div class="input-header">
 
-        <!-- Campo de busca -->
+                <!-- Campo de busca -->
                 <form class="input-header" method="get">
                     <input type="text" placeholder="O que você procura?" autocomplete="off" id="campo-busca-header">
                     <button type="submit" class="search-icon" for="campo-busca-header">
@@ -41,7 +41,7 @@
                 </form>
             </div>
 
-        <!-- Ícones bag e user -->
+            <!-- Ícones bag e user -->
             <div class="itens-header">
                 <a href="#"><i class="fa-solid fa-circle-user user"></i></a>
                 <a href="#"> <i class="fa-solid fa-bag-shopping cart"><span> 0 </span></i></a>
@@ -56,54 +56,48 @@
 
 
     <footer class="rodape">
-        <div class="paiSuperiorFooter">
-            <div class="superiorFooter">
-                <p>PARA RECEBER NOSSAS OFERTAS</p>
+
+        <div class="bloco-cadastre-ofertas">
+            <div class="titulo-cadastre-ofertas">
+                <h3>Cadastra-se</h3>
+                <h4>E receba nossas ofertas</h4>
             </div>
-    
-            <div class="superiorFooter">
-                 <form>
-                 <label for="nome">Nome:</label>
-                 <input type="text" id="nome" />
-                 </form>
-            </div>
-    
-            <div class="superiorFooter">
-                 <form>
-                 <label for="Email">Email:</label>
-                 <input type="email" id="Email" />
-                 </form>
-                 <button> Cadastrar </button>
-             </div>
+
+            <form id="form-cadastre-ofertas" class="form-cadastre-ofertas">
+                <input type="text" id="nome-cadastre-ofertas" class="input-nome-cadastre-ofertas" title="Nome" placeholder="Nome"/>
+                <input type="email" id="email-cadastre-ofertas" class="input-email-cadastre-ofertas" title="E-mail" placeholder="E-mail"/>
+            </form>
+
+            <button id="btn-cadastre-ofertas" class="btn-cadastre-ofertas" onclick="enviarCadastroOfertas()" title="Cadastrar">
+                <i class="fa-solid fa-envelope"></i> Cadastrar
+            </button>
         </div>
 
         <div class="paiInferiorFooter">
             <div class="inferiorFooter">
-                 <h1>Logo</h1>
+                <h1>Logo</h1>
             </div>
 
             <div class="inferiorFooter">
-                 <h1>Institucional </h1>
-                 <p> Sobre nós</p>
-                 <p>Políticas de Privacidade</p>
-                 <p>Trocas e Devoluções</p>
-                 <p> Fale Conosco</p>
+                <h1>Institucional </h1>
+                <p> Sobre nós</p>
+                <p>Políticas de Privacidade</p>
+                <p>Trocas e Devoluções</p>
+                <p> Fale Conosco</p>
             </div>
 
             <div class="inferiorFooter">
                 <h1>Contato</h1>
                 <img src="" alt="Logo Whatsapp">
-                 <p> Telefone </p>
-                 <br>
-                 <img src="" alt="Logo Email">
-                 <p> Email </p>
-                 <br>
-                 <img src="" alt="Logo Instagram">
-                 <p> Instagram </p>
+                <p> Telefone </p>
+                <br>
+                <img src="" alt="Logo Email">
+                <p> Email </p>
+                <br>
+                <img src="" alt="Logo Instagram">
+                <p> Instagram </p>
             </div>
-    </div>
-             
-
+        </div>
     </footer>
 </body>
 
