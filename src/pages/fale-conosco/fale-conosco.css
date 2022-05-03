@@ -1,4 +1,11 @@
 .fale-conosco{
     text-align: center;
+    font-family: 'lato' ,  sans-serif;
+    width: 100%;
 }
-.Tipo{}
+h1.Tipo{
+    font-size: 28px;
+    margin-bottom: 0;
+    line-height: 1.43;
+    
+}
