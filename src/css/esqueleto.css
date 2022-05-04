@@ -70,11 +70,12 @@ ul,.cabecalho-menu {
 /* INPUT */
 
 .input-header{
-  background-color:#2F4F4F;
+  background-color:#507373;
   border-radius:15px;
   width:170px;
   display: flex;
   justify-content: space-around;
+ 
 }  
 
 
@@ -88,6 +89,8 @@ ul,.cabecalho-menu {
   border:none;
   height:32px;
   width: 60%;
+  outline: none;
+  color: white;
 }
 
 #campo-busca-header::placeholder {
@@ -134,7 +137,7 @@ ul,.cabecalho-menu {
 
 /* --------------- MAIN ---------------*/
 .main {
-    height: calc(100vh - 80px - 230px);
+    min-height: calc(100vh - 80px - 230px);
     overflow: auto;
 }
 
