@@ -1,0 +1,99 @@
+$(document).ready(event => {
+    carregarProdutos();
+});
+
+function carregarProdutos() {
+
+    let produtosFiltrados = getProdutos();
+
+    document.getElementById("titulo-lista").textContent = produtosFiltrados.titulo;
+
+    for(let i = 0; i < produtosFiltrados.produtos.length; i++) {
+
+        let produto = produtosFiltrados.produtos[i];
+
+        let htmlProduto = `
+            <div id="produto-${i + 1}" class="produto" title="Visualizar produto" onclick="abrirDetalhesProduto(${produto.id})">
+                <div class="bloco-imagem">
+                    <img class="imagem-produto" src="${produto.imagem}">
+                </div>
+
+                <h3 class="descricao-produto">
+                    ${produto.descricao}
+                </h3>
+        `;
+
+
+        if(produto.promocao && produto.precoPromocao && produto.preco != produto.precoPromocao) {
+
+            htmlProduto = htmlProduto.concat(`
+                <div class="preco-de">
+                    <span class="cifrao">de R$</span> ${produto.preco.toFixed(2).replace('.', ',')}
+                </div>
+            `);
+
+            htmlProduto = htmlProduto.concat(`
+                <div class="preco-venda">
+                    <span class="cifrao">por R$</span> ${produto.precoPromocao.toFixed(2).replace('.', ',')}
+                </div>
+            `);
+
+        } else {
+
+            htmlProduto = htmlProduto.concat(`
+                <div class="preco-venda">
+                    <span class="cifrao">R$</span> ${produto.preco.toFixed(2).replace('.', ',')}
+                </div>
+            `);
+
+        }
+
+        htmlProduto += '\n</div>';
+
+        $('#lista-produtos').append(htmlProduto);
+
+    }
+
+}
+
+function getProdutos() {
+
+    let pathSite = window.location.href;
+   
+    if(pathSite.indexOf('blusas') != -1) {
+
+        return {
+            titulo: 'Blusas',
+            produtos: listaProdutos.filter(p => p.categoria == 'blusa')
+        };
+
+    } else if(pathSite.indexOf('acessorios') != -1){
+
+        return {
+            titulo: 'Acessórios',
+            produtos: listaProdutos.filter(p => p.categoria == 'acessorio')
+        };
+
+    } else if(pathSite.indexOf('calcas') != -1) {
+
+        return {
+            titulo: 'Calças',
+            produtos: listaProdutos.filter(p => p.categoria == 'calca')
+        };
+
+    } else {
+
+        return {
+            titulo: "Man's Week",
+            produtos: listaProdutos.filter(p => p.promocao == true)
+        };
+
+    }
+
+}
+
+function abrirDetalhesProduto(produtoId) {
+
+    window.location.href = `src/pages/detalhes-produto/detalhes-produto.html?produto=${produtoId}`
+
+}

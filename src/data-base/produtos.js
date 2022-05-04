@@ -1,4 +1,4 @@
-[
+var listaProdutos = [
     {
         "id": 1,
         "categoria": "blusa",

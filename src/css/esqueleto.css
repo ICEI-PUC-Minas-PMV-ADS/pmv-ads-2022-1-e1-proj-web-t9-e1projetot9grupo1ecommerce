@@ -137,7 +137,7 @@ ul,.cabecalho-menu {
 
 /* --------------- MAIN ---------------*/
 .main {
-    height: calc(100vh - 80px - 230px);
+    min-height: calc(100vh - 80px - 230px);
     overflow: auto;
 }
 
