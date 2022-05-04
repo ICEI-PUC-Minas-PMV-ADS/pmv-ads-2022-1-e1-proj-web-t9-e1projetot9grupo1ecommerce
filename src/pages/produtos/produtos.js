@@ -94,6 +94,6 @@ function getProdutos() {
 
 function abrirDetalhesProduto(produtoId) {
 
-    // window.location.href = `detalhes/?produto=${produtoId}`
+    window.location.href = `src/pages/detalhes-produto/detalhes-produto.html?produto=${produtoId}`
 
 }
