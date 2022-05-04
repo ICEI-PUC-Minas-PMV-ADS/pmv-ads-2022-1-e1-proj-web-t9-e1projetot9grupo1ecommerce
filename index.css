@@ -5,3 +5,54 @@
     box-sizing: border-box;
 }
 
+.container{
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    margin-top: 1rem;
+}
+
+.banner{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide{
+    width: 100vw;
+    text-align: center;
+}
+
+.slide img{
+    object-fit: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.arrow{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 38px;
+    opacity: 0.8;
+    color: white;
+}
+
+.arrow:hover{
+    transform: scale(2);
+    transition-duration: 0.5s;
+}
+
+.left-arrow{
+    left: 95px;
+}
+
+.right-arrow{
+    right: 95px;
+}
