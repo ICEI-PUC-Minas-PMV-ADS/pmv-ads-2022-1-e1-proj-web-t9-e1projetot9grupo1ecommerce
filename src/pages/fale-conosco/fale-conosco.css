@@ -1,59 +1,64 @@
-:root{
+:root {
     --head-font-weight: 700;
-   
+
     --head-font-style: normal;
-   
+
     --head-color: #282828;
-    
+
 }
 
-.fale-conosco{
+.fale-conosco {
     text-align: center;
-    
-    
+
+
 }
-h1.Tipo{
+
+h1.Tipo {
     font-size: 60px;
     margin-bottom: 0;
     line-height: 1.43;
     font-weight: var(--head-font-weight);
     font-style: var(--head-font-style);
     color: var(--head-color);
-    
+
 }
-p{
+
+p {
     margin-top: 10px;
     font-size: 22px;
     font-weight: var(--head-font-weight);
     color: var(--head-color);
     margin-bottom: 10px;
 }
+
 .content {
     display: flex;
     justify-content: center;
-  }
-  
-  .contato {
+}
+
+.contato {
     width: 100%;
     max-width: 500px;
-  }
-  
-  .form {
+}
+
+.form {
     display: flex;
     flex-direction: column;
-  }
-  .field {
+}
+
+.field {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-  }
-  
-  textarea {
+}
+
+textarea {
     height: 15px;
-  }
-  .botao {
+}
+
+.botao {
     margin-bottom: 15px;
     background-color: lightgray;
     border: 0px;
@@ -63,4 +68,4 @@ p{
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-  }
+}
