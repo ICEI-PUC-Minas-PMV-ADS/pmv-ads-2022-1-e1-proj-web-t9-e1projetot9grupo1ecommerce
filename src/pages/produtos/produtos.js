@@ -13,7 +13,7 @@ function carregarProdutos() {
         let produto = produtosFiltrados.produtos[i];
 
         let htmlProduto = `
-            <div id="produto-${i + 1}" class="produto" title="Visualizar produto" onclick="abrirDetalhesProduto(${produto.id})">
+            <div id="produto-${i + 1}" class="produto" title="Visualizar produto" onclick="abrirDetalhesProduto(${produto.id})" alt="${produto.descricao}">
                 <div class="bloco-imagem">
                     <img class="imagem-produto" src="${produto.imagem}">
                 </div>
