@@ -9,8 +9,7 @@
 
 .fale-conosco {
     text-align: center;
-
-
+    min-height: 550px;
 }
 
 h1.Tipo {
@@ -52,10 +51,6 @@ p {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-}
-
-textarea {
-    height: 15px;
 }
 
 .botao {
