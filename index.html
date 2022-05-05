@@ -27,7 +27,78 @@
     <!-- Alterar apenas o main -->
     <!-- MAIN -->
     <main class="main">
-        Teste dfsd
+        <div class="container">
+            <div class="banner" id="banner">
+               
+                <div class="slide">
+                    <img src="./src/assets/img1.png">
+                </div>
+               
+                <div class="slide">
+                    <img src="./src/assets/img2.png">
+                </div>    
+                    
+                <div class="slide">
+                    <img src="./src/assets/img3.png">
+                </div>
+                  
+                <div class="slide">
+                    <img src="./src/assets/brooksfield.png">
+                </div>
+             
+            </div>
+        
+        <button class="left-arrow arrow" id="left">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <button class="right-arrow arrow" id="right">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        </div>
+        
+        
+        <script>
+            const slides = document.querySelectorAll(".slide");
+            const banner = document.getElementById("banner");
+            const left = document.getElementById("left");
+            const right = document.getElementById("right");
+
+            const SLIDES_COUNT = slides.length;
+
+            let current_slide = 0;
+
+            left.addEventListener("click", () => {
+                current_slide--;
+                 if (current_slide < 0) {
+                    current_slide = SLIDES_COUNT - 1;
+                }
+                updateBanner();
+            })
+
+            right.addEventListener("click", () => {
+                current_slide++;
+                if (current_slide > SLIDES_COUNT - 1) {
+                    current_slide = 0;
+                }
+                updateBanner();
+            })
+
+
+
+            function updateBanner(){
+                 banner.style.transform = `translateX(${
+                    -current_slide * slides[0].offsetWidth
+                    }px)`;
+                
+            }
+        </script>
+
+
+
+
+
 
         <!-- produtos em promocao -->
         <div id="produtos"></div>
