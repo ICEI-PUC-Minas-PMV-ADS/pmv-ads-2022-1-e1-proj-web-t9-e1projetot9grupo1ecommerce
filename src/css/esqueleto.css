@@ -142,6 +142,23 @@ ul,.cabecalho-menu {
 }
 
 /* --------------- FOOTER ---------------*/
+.botao-whatsapp {
+    position: fixed;
+    z-index: 10;
+    color: #FFFFFF;
+    right: 10px;
+    top: 82%;
+    font-size: 50px;
+    background-color: #4DC247;
+    border-radius: 50%;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px #c0bdbd;
+}
+
 .rodape {
     height: 230px;
     background-color: #284C31;
