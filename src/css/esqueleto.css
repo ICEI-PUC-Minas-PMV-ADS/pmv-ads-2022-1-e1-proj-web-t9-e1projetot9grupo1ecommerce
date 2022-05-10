@@ -222,7 +222,7 @@ h1.Tipo{
     color: var(--head-color);
     
 }
-p{
+.subtitulo {
     margin-top: 20px;
     font-size: 22px;
     font-weight: var(--head-font-weight);
