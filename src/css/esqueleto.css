@@ -142,8 +142,25 @@ ul,.cabecalho-menu {
 }
 
 /* --------------- FOOTER ---------------*/
+.botao-whatsapp {
+    position: fixed;
+    z-index: 10;
+    color: #FFFFFF;
+    right: 10px;
+    top: 82%;
+    font-size: 50px;
+    background-color: #4DC247;
+    border-radius: 50%;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px #c0bdbd;
+}
+
 .rodape {
-    height: 230px;
+    height: 260px;
     background-color: #284C31;
     color: white;
 }
@@ -180,7 +197,7 @@ ul,.cabecalho-menu {
 }
 
 .btn-cadastre-ofertas {
-    display: flex;
+    display: inline-block;
     align-items: center;
     font-size: 18px;
     padding: 8px;
@@ -267,27 +284,74 @@ h1.Tipo{
   }
 
 /* RODAPE BRENO */
-.alinhado{
-    display: inline-block
-}
-.margemEsquerda{
-    margin-left: 30px;
-}
+
 
 .paiInferiorFooter{
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 16px;
+    width: 100%; 
+    border-bottom: 1px solid white
 }
-.inferiorFooter{
-    width: 32%;
-    text-align: center;
-    display: inline-block;
-}
-.paiSuperiorFooter {  
-    width: 100%;
+ 
+
+.inferiorFooterMedio{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    margin-left: 5%;  
+    font-size: 16px;
 }
 
-.superiorFooter {
-    width: 30%;
-    text-align: center;
-    display: inline-block;
+
+.inferiorDireita{
+    display: flex;
+    justify-items: center;
+    margin-right: 12%;
+    flex-direction: column;
 }
+
+
+.inferiorEsquerda{
+    display: flex;
+    font-size: 16px;
+    justify-items: center;
+    margin-left: 12%;
+}
+
+.botaoFooter:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;  
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:active {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    background-color: #284C31;
+    text-align: center;
+    padding: 3px;
+}
+
+
+
+
+    
+
+
+
+
+
+
