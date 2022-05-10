@@ -7,15 +7,20 @@
     <title>E-COMMERCE</title>
 
     <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/banner.css">
     <link rel="stylesheet" href="/src/css/esqueleto.css">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+
 
     <script src="https://kit.fontawesome.com/94b713f2cc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="/src/header-footer/header-footer.js"></script>
-    <script src="/index.js"></script>
+    <script src="/src/js/header-footer.js"></script>
+    <script src="/src/js/index.js"></script>
+    <script src="/src/js/banner.js"></script>
+    <script src="/src/js/header.js"></script>
 
 </head>
 
@@ -28,77 +33,36 @@
     <!-- MAIN -->
     <main class="main">
         <div class="container">
+
+            <button class="left-arrow arrow" id="left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
             <div class="banner" id="banner">
-               
+
                 <div class="slide">
-                    <img src="./src/assets/img1.png">
+                    <img src="./src/assets/img1.webp">
                 </div>
-               
+
                 <div class="slide">
-                    <img src="./src/assets/img2.png">
-                </div>    
-                    
-                <div class="slide">
-                    <img src="./src/assets/img3.png">
+                    <img src="./src/assets/img2.webp">
                 </div>
-                  
+
                 <div class="slide">
-                    <img src="./src/assets/brooksfield.png">
+                    <img src="./src/assets/img3.webp">
                 </div>
-             
+
+                <div class="slide">
+                    <img src="./src/assets/img4.webp">
+                </div>
+
             </div>
-        
-        <button class="left-arrow arrow" id="left">
-            <i class="fas fa-chevron-left"></i>
-        </button>
 
-        <button class="right-arrow arrow" id="right">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-        
+            <button class="right-arrow arrow" id="right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
         </div>
-        
-        
-        <script>
-            const slides = document.querySelectorAll(".slide");
-            const banner = document.getElementById("banner");
-            const left = document.getElementById("left");
-            const right = document.getElementById("right");
-
-            const SLIDES_COUNT = slides.length;
-
-            let current_slide = 0;
-
-            left.addEventListener("click", () => {
-                current_slide--;
-                 if (current_slide < 0) {
-                    current_slide = SLIDES_COUNT - 1;
-                }
-                updateBanner();
-            })
-
-            right.addEventListener("click", () => {
-                current_slide++;
-                if (current_slide > SLIDES_COUNT - 1) {
-                    current_slide = 0;
-                }
-                updateBanner();
-            })
-
-
-
-            function updateBanner(){
-                 banner.style.transform = `translateX(${
-                    -current_slide * slides[0].offsetWidth
-                    }px)`;
-                
-            }
-        </script>
-
-
-
-
-
 
         <!-- produtos em promocao -->
         <div id="produtos"></div>

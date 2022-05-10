@@ -38,7 +38,13 @@ function carregarProdutos() {
                 </div>
             `);
 
-        } else {
+            htmlProduto = htmlProduto.concat(`
+                <div class="submit-button-cart">
+                    <button type="submit" class="btn-add-to-cart"> Adicionar à sacola  </button>
+                </div>
+            `)
+        }
+         else {
 
             htmlProduto = htmlProduto.concat(`
                 <div class="preco-venda">
@@ -46,6 +52,11 @@ function carregarProdutos() {
                 </div>
             `);
 
+            htmlProduto = htmlProduto.concat(`
+            <div class="submit-button-cart">
+                <button type="submit" class="btn-add-to-cart"> Adicionar à sacola </button>
+            </div>
+        `)
         }
 
         htmlProduto += '\n</div>';
