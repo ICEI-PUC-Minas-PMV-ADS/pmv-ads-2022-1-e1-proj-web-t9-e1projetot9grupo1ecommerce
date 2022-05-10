@@ -2,7 +2,9 @@
 $(document).ready(()=>{
     
     
-    
+    // Aqui chamamos o objeto window e neles colocamos a propriedade de escutar um evento, que no caso é o Resize, que basicamente vê o tamanhoa de uma página.
+
+    // Chamamos uma função que contém um IF, se ele for verdade, ele entrá na condição que declara a variável, chama a função de fechar menu  e executa um slide toggle para a posição 0
     window.addEventListener('resize', () => {
 
         let largura = window.innerWidth;
@@ -21,6 +23,8 @@ $(document).ready(()=>{
 
 let menuMobile = document.querySelector('.mobile-menu');
 
+// Essa função é a openMenu, está registrada num evento de onclick em um botão, essa função serve para abrir e fechar o menu
+
 function openMenu() {
     let menuMobile = document.querySelector('.mobile-menu');
 
@@ -37,7 +41,7 @@ function openMenu() {
 }
 
 
-
+// Essa função vai trocar o ícone e também habilitar o menu de acordo com a classe que ele possui la no css.
 function abrirMenu (){
     let menuMobile = document.querySelector('.mobile-menu');
 
@@ -47,6 +51,7 @@ function abrirMenu (){
 
 }
 
+// Essa função vai trocar o ícone e também habilitar o menu de acordo com a classe que ele possui la no css.
 function fecharMenu (){
     let menuMobile = document.querySelector('.mobile-menu');
     menuMobile.classList.remove('open');
