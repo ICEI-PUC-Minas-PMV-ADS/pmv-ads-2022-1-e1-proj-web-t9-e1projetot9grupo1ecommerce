@@ -16,7 +16,7 @@
 
 .produto {
     width: 250px;
-    height: 450px;
+    height: 500px;
     border: 1px solid #bbbbbb;
     border-radius: 5px;
     padding: 15px;
@@ -65,4 +65,17 @@
 }
 .produto .preco-venda .cifrao {
     font-size: 14px;
+}
+
+
+/* João - adicionei para ver como ficaria o botão */
+
+.btn-add-to-cart {
+    width: 100%;
+    padding: 1em;
+    margin-top: 10px;
+    background-color: #284C31;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
 }
