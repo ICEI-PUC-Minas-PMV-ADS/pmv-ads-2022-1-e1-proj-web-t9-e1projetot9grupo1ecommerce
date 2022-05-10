@@ -11,7 +11,7 @@ $(document).ready(()=>{
         let menuMobile = document.querySelector('.mobile-menu');
         if (largura > 768) {
             if (menuMobile.classList.contains('open')) {
-                console.log('entrou')
+                //console.log('entrou')
                 let menuMobile = document.querySelector('.mobile-menu');
                 fecharMenu();
                 $(`.mobile-menu`).slideToggle(0)
