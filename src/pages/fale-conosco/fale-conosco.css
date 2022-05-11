@@ -22,7 +22,7 @@ h1.Tipo {
 
 }
 
-text.fale-conosco {
+textarea.fale-conosco {
     margin-top: 10px;
     font-size: 22px;
     font-weight: var(--head-font-weight);
@@ -39,7 +39,6 @@ text.fale-conosco {
     width: 100%;
     max-width: 500px;
 }
-
 .form {
     display: flex;
     flex-direction: column;

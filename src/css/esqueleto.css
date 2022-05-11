@@ -5,7 +5,7 @@
 
 body{
     font-family: 'Lato', sans-serif;
-    width: 100%;
+    width: 100%;  
 }
 
 *{
@@ -13,9 +13,13 @@ body{
 }
 
 /* --------------- MAIN ---------------*/
-.main {
-    min-height: calc(100vh - 80px - 230px);
-    overflow: auto;
+.main-index {
+       height: 100vw;
+       min-height: calc(100vh - 80px - 230px);
+       overflow: hidden;
 }
 
+.main-other-pages{
+    height: 71.3vh;
+}
 
