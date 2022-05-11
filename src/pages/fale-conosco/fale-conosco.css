@@ -22,7 +22,7 @@ h1.Tipo {
 
 }
 
-p {
+ text {
     margin-top: 10px;
     font-size: 22px;
     font-weight: var(--head-font-weight);
