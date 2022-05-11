@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-COMMERCE</title>
+
     <link rel="stylesheet" href="/src/css/reset.css">
-    <link rel="stylesheet" href="/src/css/banner.css">
     <link rel="stylesheet" href="/src/css/esqueleto.css">
     <link rel="stylesheet" href="/src/css/header.css">
     <link rel="stylesheet" href="/src/css/footer.css">
@@ -18,32 +19,39 @@
 
     <script src="/src/js/header-footer.js"></script>
     <script src="/src/js/index.js"></script>
-    <script src="/src/js/banner.js"></script>
     <script src="/src/js/header.js"></script>
-
-
-    <link rel="stylesheet" type="text/css" href="/src/pages/fale-conosco/fale-conosco.css">
-
+    
+    <link rel="stylesheet" type="text/css" href="/src/pages/fale-conosco-dados/fale-conosco-dados.css">
 
 </head>
 
-<body>
 
+<body>
     <!-- HEADER -->
     <div id="header"></div>
 
     <main class="fale-conosco">
         <section class="content">
             <div class="contato">
-                <h1 class="Tipo">Fale Conosco</h1>
-                <div class="subtitulo">Está com algum problema ou dúvida?</div>
-                <div class="subtitulo">Nós podemos te ajudar, basta preencher o formulário abaixo:</div>
+                <h1 class="Tipo">Fale com nosso encarregado de dados</h1>
+                <p>Está com algum problema ou dúvida?</p>
+                <p>Nós podemos te ajudar, basta preencher o formulário abaixo:</p>
                 <form class="form" method="post" action="./email.php">
-                    <input class="field" name="name" placeholder="Seu Nome" />
+                    <input class="field" name="name" placeholder="Seu Nome" required />
 
-                    <input class="field" name="email" placeholder="Seu E-mail" />
+                    <input class="field" name="email" placeholder="Seu E-mail" required />
 
                     <input class="field" name="phone" placeholder="Seu Telefone" />
+
+                    <select class="field" name="motivo" id="motivo" required>
+                        <option selected disabled value="">Motivo da solicitação</option>
+                        <option value="senha">Como faço para alterar minha senha?</option>
+                        <option value="dados">Como altero os dados de cadastro?</option>
+                        <option value="acesso">Não consigo acessar minha conta</option>
+                        <option value="esqueci">Esqueci minha senha</option>
+                        <option value="excluir">Como excluo meu cadastro?</option>
+                        <option value="outros">Outro assunto</option>
+                    </select>
 
                     <textarea class="field" rows="20" name="mesage" placeholder="Digite sua mensagem aqui."></textarea>
                     <input class="botao" type="submit" value="Envie sua mensagem" />
@@ -54,7 +62,6 @@
 
     <!-- FOOTER -->
     <div id="footer"></div>
-
 </body>
 
 </html>
