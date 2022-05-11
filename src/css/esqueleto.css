@@ -14,7 +14,7 @@ body{
 
 /* --------------- MAIN ---------------*/
 .main-index {
-       height: 100vw;
+       
        min-height: calc(100vh - 80px - 230px);
        overflow: hidden;
 }
