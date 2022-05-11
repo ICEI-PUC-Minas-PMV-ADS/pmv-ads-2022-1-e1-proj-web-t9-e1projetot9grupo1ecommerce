@@ -22,7 +22,13 @@ h1.Tipo {
 
 }
 
-
+text.fale-conosco {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: var(--head-font-weight);
+    color: var(--head-color);
+    margin-bottom: 10px;
+}
 
 .content {
     display: flex;
