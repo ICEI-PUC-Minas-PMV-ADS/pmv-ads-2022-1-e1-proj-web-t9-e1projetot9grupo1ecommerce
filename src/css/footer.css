@@ -177,6 +177,11 @@ h1.Tipo{
     font-size: 16px;
     justify-items: center;
     margin-left: 12%;
+
+}
+
+.tituloFooterInferior{
+    font-size: 22px;
 }
 
 .botaoFooter:hover{
