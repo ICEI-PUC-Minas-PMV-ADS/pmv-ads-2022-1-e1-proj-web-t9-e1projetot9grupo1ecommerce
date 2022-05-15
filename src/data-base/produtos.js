@@ -6,7 +6,7 @@ var listaProdutos = [
         "preco": 399.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/1.webp",
+        "imagem": "./src/data-base/imagens-produtos/1.webp",
         "cores": [
             {
                 "titulo": "Branco",
@@ -30,7 +30,7 @@ var listaProdutos = [
         "preco": 399.9,
         "precoPromocao": 379.9,
         "promocao": true,
-        "imagem": "/src/data-base/imagens-produtos/2.webp",
+        "imagem": "./src/data-base/imagens-produtos/2.webp",
         "cores": [
             {
                 "titulo": "Azul",
@@ -54,7 +54,7 @@ var listaProdutos = [
         "preco": 499.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/3.webp",
+        "imagem": "./src/data-base/imagens-produtos/3.webp",
         "cores": [
             {
                 "titulo": "Marinho",
@@ -82,7 +82,7 @@ var listaProdutos = [
         "preco": 299.9,
         "precoPromocao": 259.9,
         "promocao": true,
-        "imagem": "/src/data-base/imagens-produtos/4.webp",
+        "imagem": "./src/data-base/imagens-produtos/4.webp",
         "cores": [
             {
                 "titulo": "Branco",
@@ -106,7 +106,7 @@ var listaProdutos = [
         "preco": 299.9,
         "precoPromocao": 279.9,
         "promocao": true,
-        "imagem": "/src/data-base/imagens-produtos/5.webp",
+        "imagem": "./src/data-base/imagens-produtos/5.webp",
         "cores": [
             {
                 "titulo": "Azul Claro",
@@ -130,7 +130,7 @@ var listaProdutos = [
         "preco": 339.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/6.webp",
+        "imagem": "./src/data-base/imagens-produtos/6.webp",
         "cores": [
             {
                 "titulo": "Cinza",
@@ -154,7 +154,7 @@ var listaProdutos = [
         "preco": 419.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/7.webp",
+        "imagem": "./src/data-base/imagens-produtos/7.webp",
         "cores": [
             {
                 "titulo": "Vinho",
@@ -178,7 +178,7 @@ var listaProdutos = [
         "preco": 339.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/8.webp",
+        "imagem": "./src/data-base/imagens-produtos/8.webp",
         "cores": [
             {
                 "titulo": "Cinza",
@@ -202,7 +202,7 @@ var listaProdutos = [
         "preco": 559.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/9.webp",
+        "imagem": "./src/data-base/imagens-produtos/9.webp",
         "cores": [
             {
                 "titulo": "Lilas",
@@ -226,7 +226,7 @@ var listaProdutos = [
         "preco": 259.9,
         "precoPromocao": 239.9,
         "promocao": true,
-        "imagem": "/src/data-base/imagens-produtos/10.webp",
+        "imagem": "./src/data-base/imagens-produtos/10.webp",
         "cores": [
             {
                 "titulo": "Marinho",
@@ -250,7 +250,7 @@ var listaProdutos = [
         "preco": 499.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/11.webp",
+        "imagem": "./src/data-base/imagens-produtos/11.webp",
         "cores": [
             {
                 "titulo": "Branco",
@@ -274,7 +274,7 @@ var listaProdutos = [
         "preco": 259.9,
         "precoPromocao": 229.9,
         "promocao": true,
-        "imagem": "/src/data-base/imagens-produtos/12.webp",
+        "imagem": "./src/data-base/imagens-produtos/12.webp",
         "cores": [
             {
                 "titulo": "Café",
@@ -302,7 +302,7 @@ var listaProdutos = [
         "preco": 549.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/13.webp",
+        "imagem": "./src/data-base/imagens-produtos/13.webp",
         "cores": [
             {
                 "titulo": "Marinho",
@@ -330,7 +330,7 @@ var listaProdutos = [
         "preco": 339.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/14.webp",
+        "imagem": "./src/data-base/imagens-produtos/14.webp",
         "cores": [
             {
                 "titulo": "Whisky",
@@ -354,7 +354,7 @@ var listaProdutos = [
         "preco": 169.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/15.webp",
+        "imagem": "./src/data-base/imagens-produtos/15.webp",
         "cores": [
             {
                 "titulo": "Preto/Café",
@@ -378,7 +378,7 @@ var listaProdutos = [
         "preco": 89.9,
         "precoPromocao": 85.9,
         "promocao": true,
-        "imagem": "/src/data-base/imagens-produtos/16.webp",
+        "imagem": "./src/data-base/imagens-produtos/16.webp",
         "cores": [
             {
                 "titulo": "Pinhão",
@@ -402,7 +402,7 @@ var listaProdutos = [
         "preco": 359.9,
         "precoPromocao": 259.9,
         "promocao": true,
-        "imagem": "/src/data-base/imagens-produtos/17.webp",
+        "imagem": "./src/data-base/imagens-produtos/17.webp",
         "cores": [
             {
                 "titulo": "Café/Marrom",
@@ -426,7 +426,7 @@ var listaProdutos = [
         "preco": 499.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/18.webp",
+        "imagem": "./src/data-base/imagens-produtos/18.webp",
         "cores": [
             {
                 "titulo": "Branco",
@@ -450,7 +450,7 @@ var listaProdutos = [
         "preco": 389.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/19.webp",
+        "imagem": "./src/data-base/imagens-produtos/19.webp",
         "cores": [
             {
                 "titulo": "Café",
@@ -474,7 +474,7 @@ var listaProdutos = [
         "preco": 599.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/20.webp",
+        "imagem": "./src/data-base/imagens-produtos/20.webp",
         "cores": [
             {
                 "titulo": "Preto",
@@ -498,7 +498,7 @@ var listaProdutos = [
         "preco": 599.9,
         "precoPromocao": 519.9,
         "promocao": true,
-        "imagem": "/src/data-base/imagens-produtos/21.webp",
+        "imagem": "./src/data-base/imagens-produtos/21.webp",
         "cores": [
             {
                 "titulo": "Creme",
@@ -522,7 +522,7 @@ var listaProdutos = [
         "preco": 399.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/22.webp",
+        "imagem": "./src/data-base/imagens-produtos/22.webp",
         "cores": [
             {
                 "titulo": "Marinho",
@@ -546,7 +546,7 @@ var listaProdutos = [
         "preco": 299.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/23.webp",
+        "imagem": "./src/data-base/imagens-produtos/23.webp",
         "cores": [
             {
                 "titulo": "Cinza",
@@ -570,7 +570,7 @@ var listaProdutos = [
         "preco": 499.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/24.webp",
+        "imagem": "./src/data-base/imagens-produtos/24.webp",
         "cores": [
             {
                 "titulo": "Azul",
@@ -594,7 +594,7 @@ var listaProdutos = [
         "preco": 459.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/25.webp",
+        "imagem": "./src/data-base/imagens-produtos/25.webp",
         "cores": [
             {
                 "titulo": "Azul Escuro",
@@ -618,7 +618,7 @@ var listaProdutos = [
         "preco": 459.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/26.webp",
+        "imagem": "./src/data-base/imagens-produtos/26.webp",
         "cores": [
             {
                 "titulo": "Grafite",
@@ -642,7 +642,7 @@ var listaProdutos = [
         "preco": 599.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/27.webp",
+        "imagem": "./src/data-base/imagens-produtos/27.webp",
         "cores": [
             {
                 "titulo": "Marinho",
@@ -666,7 +666,7 @@ var listaProdutos = [
         "preco": 349.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/28.webp",
+        "imagem": "./src/data-base/imagens-produtos/28.webp",
         "cores": [
             {
                 "titulo": "Khaki",
@@ -690,7 +690,7 @@ var listaProdutos = [
         "preco": 239.9,
         "precoPromocao": 0,
         "promocao": false,
-        "imagem": "/src/data-base/imagens-produtos/29.webp",
+        "imagem": "./src/data-base/imagens-produtos/29.webp",
         "cores": [
             {
                 "titulo": "Preto",

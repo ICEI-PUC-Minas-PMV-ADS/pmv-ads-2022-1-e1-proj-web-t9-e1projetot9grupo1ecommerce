@@ -2,7 +2,7 @@
  * Load da vitrine de produtos da pagina inicial
  */
 $(() => {
-    $("#produtos").load("/src/pages/produtos/produtos.html");
+    $("#produtos").load("./src/pages/produtos/produtos.html");
 });
 
 /**

@@ -55,7 +55,7 @@ function abrirMenu (){
     let menuMobile = document.querySelector('.mobile-menu');
 
     menuMobile.classList.add('open');
-    document.querySelector('.icon').src = "/src/assets/close_white_36dp.svg";
+    document.querySelector('.icon').src = "./src/assets/close_white_36dp.svg";
 
 
 }
@@ -64,7 +64,7 @@ function abrirMenu (){
 function fecharMenu (){
     let menuMobile = document.querySelector('.mobile-menu');
     menuMobile.classList.remove('open');
-    document.querySelector('.icon').src = "/src/assets/menu_white_36dp.svg";
+    document.querySelector('.icon').src = "./src/assets/menu_white_36dp.svg";
 
 }
 
