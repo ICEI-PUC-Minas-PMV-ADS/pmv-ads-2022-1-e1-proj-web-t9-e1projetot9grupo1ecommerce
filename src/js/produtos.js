@@ -40,7 +40,7 @@ function carregarProdutos() {
 
             htmlProduto = htmlProduto.concat(`
                 <div class="submit-button-cart">
-                    <button type="submit" class="btn-add-to-cart"> Adicionar à sacola  </button>
+                    <button type="button" class="btn-add-to-cart"> Adicionar à sacola  </button>
                 </div>
             `)
         }
@@ -54,7 +54,7 @@ function carregarProdutos() {
 
             htmlProduto = htmlProduto.concat(`
             <div class="submit-button-cart">
-                <button type="submit" class="btn-add-to-cart"> Adicionar à sacola </button>
+                <button type="button" class="btn-add-to-cart"> Adicionar à sacola </button>
             </div>
         `)
         }
