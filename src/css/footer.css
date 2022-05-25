@@ -216,28 +216,33 @@ footer a:active {
 
 /* COLHER ACEITE TERMOS */
 
-.cookiesadvice{
+.cookie-container{
     border: solid 2px;
     border-radius: 5px;
     position: fixed;
-    left: 375px;
-    right: 375px;
-    bottom: 18px;
+    left: 450px;
+    right: 450px;
+    bottom: -100%;
     padding: 15px;
     background-color: #FFFFFF;
     color: #000;
-    font-size: 15px;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 4px 4px 4px #4d4d4d3f;
-}
-
-.cookiesadvice a{
+    transition: 400ms;
+  }
+  
+  .cookie-container.active {
+    bottom: 0;
+  }
+  
+  .cookie-container a{
     color:#000
-}
-
-.cookiesadvice button{
+  }
+  
+  .cookie-btn{
     background-color: #284C31;
     color:#fff;
     border: solid 2px;
@@ -246,16 +251,7 @@ footer a:active {
     border-radius: 5px;
     cursor: pointer;
     padding: 10px 30px;
-}
-
-.cookiesadvice-left{
-    font-size: 16px;
-}
-
-
-    
-
-
+  }
 
 
 
