@@ -1,8 +1,8 @@
 
 $(document).ready(event => {
 
-    $("#header").load("/src/header-footer/header.html");
-    $("#footer").load("/src/header-footer/footer.html");
+    $("#header").load("src/header-footer/header.html");
+    $("#footer").load("src/header-footer/footer.html");
 
 }) 
 
@@ -66,13 +66,13 @@ function openMenu() {
 function abrirMenu (){
     let menuMobile = document.querySelector('.mobile-menu');
     menuMobile.classList.add('open');
-    document.querySelector('.icon').src = "./src/assets/close_white_36dp.svg";
+    document.querySelector('.icon').src = "src/assets/close_white_36dp.svg";
 }
 
 function fecharMenu (){
     let menuMobile = document.querySelector('.mobile-menu');
     menuMobile.classList.remove('open');
-    document.querySelector('.icon').src = "./src/assets/menu_white_36dp.svg";
+    document.querySelector('.icon').src = "src/assets/menu_white_36dp.svg";
 
 }
 
