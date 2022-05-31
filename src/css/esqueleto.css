@@ -25,3 +25,11 @@ body{
     
 }
 
+
+.main-other-pages-details{
+    height: 80vh;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+

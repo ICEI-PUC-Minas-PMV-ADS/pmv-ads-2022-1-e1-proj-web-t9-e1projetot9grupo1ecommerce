@@ -4,7 +4,7 @@ $(document).ready(event => {
 
 function carregarProdutos() {
 
-    let produtosFiltrados = getProdutos();
+    const produtosFiltrados = getProdutos();
 
     document.getElementById("titulo-lista").textContent = produtosFiltrados.titulo;
 
@@ -42,9 +42,8 @@ function carregarProdutos() {
                 <div class="submit-button-cart">
                     <button type="button" class="btn-add-to-cart"> Adicionar à sacola  </button>
                 </div>
-            `)
-        }
-         else {
+            `);
+        } else {
 
             htmlProduto = htmlProduto.concat(`
                 <div class="preco-venda">
@@ -53,10 +52,11 @@ function carregarProdutos() {
             `);
 
             htmlProduto = htmlProduto.concat(`
-            <div class="submit-button-cart">
-                <button type="button" class="btn-add-to-cart"> Adicionar à sacola </button>
-            </div>
-        `)
+                <div class="submit-button-cart">
+                    <button type="button" class="btn-add-to-cart"> Adicionar à sacola </button>
+                </div>
+            `);
+
         }
 
         htmlProduto += '\n</div>';
@@ -69,34 +69,36 @@ function carregarProdutos() {
 
 function getProdutos() {
 
+    const lista = JSON.parse(window.localStorage.getItem('produtos'));
+
     let pathSite = window.location.href;
    
     if(pathSite.indexOf('blusas') != -1) {
 
         return {
             titulo: 'Blusas',
-            produtos: listaProdutos.filter(p => p.categoria == 'blusa')
+            produtos: lista.filter(p => p.categoria == 'blusa')
         };
 
     } else if(pathSite.indexOf('acessorios') != -1){
 
         return {
             titulo: 'Acessórios',
-            produtos: listaProdutos.filter(p => p.categoria == 'acessorio')
+            produtos: lista.filter(p => p.categoria == 'acessorio')
         };
 
     } else if(pathSite.indexOf('calcas') != -1) {
 
         return {
             titulo: 'Calças',
-            produtos: listaProdutos.filter(p => p.categoria == 'calca')
+            produtos: lista.filter(p => p.categoria == 'calca')
         };
 
     } else {
 
         return {
             titulo: "Man's Week",
-            produtos: listaProdutos.filter(p => p.promocao == true)
+            produtos: lista.filter(p => p.promocao == true)
         };
 
     }
