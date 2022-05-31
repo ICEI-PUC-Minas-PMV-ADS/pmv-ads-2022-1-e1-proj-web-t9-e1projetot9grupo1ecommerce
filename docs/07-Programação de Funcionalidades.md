@@ -29,7 +29,6 @@ Figura 18 - Cabeçalho e rodapé
 <li>footer.css</li>
 <li>reset.css</li>
 <li>esqueleto.css</li>
-<li>header-footer.js</li>
 <li>header.js</li>
 <li>index.js</li>
 </ul>
@@ -161,7 +160,6 @@ Figura 25 - Pop-up Aceite de Termos
 <ul>
 <li>footer.html</li>
 <li>footer.css</li>
-<li>header-footer.js</li>
 </ul>
 
 ## Instruções de acesso do projeto

@@ -20,7 +20,13 @@
 
     <script type="text/javascript" language="javascript" src="src/data-base/produtos.js"></script>
 
-    <script type="text/javascript" src="src/js/header-footer.js"></script>
+    <script type="text/javascript">
+        $(document).ready(event => {
+            $("#header").load("src/header-footer/header.html");
+            $("#footer").load("src/header-footer/footer.html");
+        }) 
+    </script>
+    
     <script type="text/javascript" src="src/js/index.js"></script>
     <script type="text/javascript" src="src/js/banner.js"></script>
     <script type="text/javascript" src="src/js/header.js"></script>

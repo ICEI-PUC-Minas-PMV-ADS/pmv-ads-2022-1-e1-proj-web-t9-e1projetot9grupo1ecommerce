@@ -15,7 +15,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="../../js/header-footer.js"></script>
+    <script type="text/javascript">
+        $(document).ready(event => {
+            $("#header").load("../../header-footer/header.html");
+            $("#footer").load("../../header-footer/footer.html");
+        }) 
+    </script>
+
     <script type="text/javascript" src="../../js/index.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
 
