@@ -16,6 +16,7 @@ function carregarDetalhesProduto() {
 
     document.getElementById('descricao-produto').textContent = produto['descricao'];
     document.getElementById('preco-produto').textContent = `R$ ${(produto['preco'] || 0).toFixed(2).replace('.', ',')}`;
+    $('#bloco-imagem-produto').append(`<img src="${produto.imagem}">`);
 
     for(let tamanho of produto.tamanhos) {
 
