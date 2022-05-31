@@ -8,6 +8,8 @@ let tamanhoSelecionado;
 let corSelecionada;
 
 function carregarDetalhesProduto() {
+
+    const listaProdutos = JSON.parse(window.localStorage.getItem('produtos'));
     
     var url = new URL(window.location.href);
     var idProduto = url.searchParams.get("produto");
