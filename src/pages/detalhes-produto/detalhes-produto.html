@@ -15,10 +15,13 @@
     <link type="text/css" rel="stylesheet" href="src/css/esqueleto.css">
     <link type="text/css" rel="stylesheet" href="src/css/header.css">
     <link type="text/css" rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <script type="text/javascript" src="src/js/header-footer.js"></script>
     <script type="text/javascript" src="src/js/index.js"></script>
     <script type="text/javascript" src="src/js/header.js"></script>
+    <script src="/src/data-base/produtos.js"></script>
+
 
     <link rel="stylesheet" type="text/css" href="src/css/detalhes-produto.css">
     <script type="application/javascript" src="src/js/detalhes-produto.js"></script>
@@ -32,48 +35,92 @@
     <!-- HEADER -->
     <div id="header"></div>
 
-    <main class="detalhes-produto-page">
+    <!-- div que vai ser preenchida pelo js no carrinho -->
 
-        <div class="detalhes-produto">
-            <div class="coluna-imagem">
-                <div id="bloco-imagem-produto" class="bloco-imagem-produto">
-                    <!-- <img src="src/data-base/imagens-produtos/17.webp"> -->
+    <div class="produtos">
+        <div class="cart--item">
+            <img src="">
+            <div class="cart--item-nome">--</div>
+            <div class=" cart--item--qtarea">
+                <button class="cart--item-remover">Remover</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <main class="main-other-pages-details detalhes-produto-page">
+
+        <div class="bloco-produto">
+            <div class="detalhes-produto">
+                <div class="coluna-imagem">
+                    <div id="bloco-imagem-produto" class="bloco-imagem-produto">
+                        <!-- <img src="src/data-base/imagens-produtos/17.webp"> -->
+                    </div>
+                </div>
+                <div class="coluna-descritivo">
+                    <div id="descricao-produto" class="descricao-produto"></div>
+                    <div id="preco-produto" class="preco-produto"></div>
+                    <div class="bloco-tamanho">
+                        <div class="titulo-tamanho">Tamanho: <span id="texto-tamanho"></span></div>
+                        <ul class="lista-tamanhos">
+                            <!-- <li>
+                                <div onclick="changeTamanho('P')">P</div>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="bloco-cor">
+                        <div class="titulo-cor">Cor: <span id="texto-cor"></span></div>
+                        <ul class="lista-cores">
+                            <!-- <li title="Vermelho">
+                                <div onclick="changeCor('#ff0000', 'Vemelho')" style="background-color: #ff0000;"></div>
+                            </li> -->
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="coluna-descritivo">
-                <div id="descricao-produto" class="descricao-produto"></div>
-
-                <div id="preco-produto" class="preco-produto"></div>
-
-                <div class="bloco-tamanho">
-                    <div class="titulo-tamanho">Tamanho: <span id="texto-tamanho"></span></div>
-                    <ul class="lista-tamanhos">
-                        <!-- <li>
-                            <div onclick="changeTamanho('P')">P</div>
-                        </li> -->
-                    </ul>
-                </div>
-
-                <div class="bloco-cor">
-                    <div class="titulo-cor">Cor: <span id="texto-cor"></span></div>
-
-                    <ul class="lista-cores">
-                        <!-- <li title="Vermelho">
-                            <div onclick="changeCor('#ff0000', 'Vemelho')" style="background-color: #ff0000;"></div>
-                        </li> -->
-                    </ul>
-                </div>
+            <div class="linha-button-comprar">
+                <button class="product--addButton" onclick="adicionarCarrinho()">Comprar</button>
             </div>
         </div>
 
-        <div class="linha-button-comprar">
-            <button onclick="adicionarCarrinho()">Comprar</button>
+        <div class="bloco-aside">
+            <aside>
+                <!-- Área do carrinho -->
+                <div class="cart--area">
+                    <!-- Fechar carrinho -->
+                    <div class="menu-closer">
+                        <span class="material-icons close-button-cart">close</span>
+                    </div>
+                    <!-- O que aparece no carrinho -->
+                    <h1>Seus produtos</h1>
+                    <div class="cart"></div>
+                    <!-- Detalhes do carrinho -->
+                    <div class="cart--details">
+                        <div class="cart--totalitem subtotal">
+                            <span>Subtotal</span>
+                            <span>R$ --</span>
+                        </div>
+                        <div class="cart--totalitem desconto">
+                            <span>Desconto(-10%)</span>
+                            <span>R$--</span>
+                        </div>
+                        <div class="cart--totalitem total big">
+                            <span>Total</span>
+                            <span>R$--</span>
+                        </div>
+                        <a href="https://api.whatsapp.com/send?phone=5521988177200&text=Preciso%20de%20ajuda%20no%20site"><button class="cart--finalizar">Finalizar a compra</button></a>
+                       <!--  <div class="cart--finalizar">Finalizar a compra</div> -->
+                      <!--   -->
+                    </div>
+                </div>
+            </aside>
         </div>
 
     </main>
 
     <!-- FOOTER -->
     <div id="footer"></div>
+    <script src="/src/data-base/carrinho.js"></script>
 
 </body>
+</html>
