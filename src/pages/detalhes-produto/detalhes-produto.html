@@ -32,11 +32,43 @@
     <!-- HEADER -->
     <div id="header"></div>
 
-    <main class="main-other-pages">
-        
-        <div>
-            <button onclick="adicionarCarrinho()">ADICIONAR AO CARRINHO</button>
+    <main class="detalhes-produto-page">
 
+        <div class="detalhes-produto">
+            <div class="coluna-imagem">
+                <div class="bloco-imagem-produto">
+                    <img src="src/data-base/imagens-produtos/17.webp">
+                </div>
+            </div>
+
+            <div class="coluna-descritivo">
+                <div id="descricao-produto" class="descricao-produto"></div>
+
+                <div id="preco-produto" class="preco-produto"></div>
+
+                <div class="bloco-tamanho">
+                    <div class="titulo-tamanho">Tamanho: <span id="texto-tamanho"></span></div>
+                    <ul class="lista-tamanhos">
+                        <!-- <li>
+                            <div onclick="changeTamanho('P')">P</div>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="bloco-cor">
+                    <div class="titulo-cor">Cor: <span id="texto-cor"></span></div>
+
+                    <ul class="lista-cores">
+                        <!-- <li title="Vermelho">
+                            <div onclick="changeCor('#ff0000', 'Vemelho')" style="background-color: #ff0000;"></div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="linha-button-comprar">
+            <button onclick="adicionarCarrinho()">Comprar</button>
         </div>
 
     </main>
