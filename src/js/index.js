@@ -1,9 +1,16 @@
+$(document).ready(event => {
+    window.localStorage.setItem('produtos', JSON.stringify(listaProdutos));
+
+    atualizarQtdProdutosHeader();
+});
+
 /**
  * Load da vitrine de produtos da pagina inicial
  */
 $(() => {
     $("#produtos").load("src/pages/produtos/produtos.html");
 });
+
 
 /**
  * Função deve enviar os dados do e-mail para armazenar na lista de tramissões das ofertas
