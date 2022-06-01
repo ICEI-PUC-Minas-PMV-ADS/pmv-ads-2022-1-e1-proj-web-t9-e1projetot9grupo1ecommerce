@@ -1,0 +1,195 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: Lato;
+}
+
+.divBotoesLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    font-weight: 700;
+}
+
+.divBotoesLogin a {
+    text-decoration: none;
+    color: #6d6a6a;
+}
+
+.divBotoesLogin a:hover {
+    color: #333;
+
+
+}
+.divider {
+    padding: 10px;
+
+}
+
+.formLogin {
+    padding: 30px 5px;
+    border-radius: 10px;
+    max-width: 70vw;
+    
+}
+
+
+.formLogin h1 {
+    padding: 40px 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #284C31;
+}
+
+.formLogin p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #6d6a6a;
+
+}
+
+
+fieldset{
+    border: none;
+}
+
+
+.containerNomes {
+display: flex;
+justify-content: space-between;
+}
+
+
+.containerSenhas {
+    display: flex;
+    padding-top: 20px;   
+}
+
+
+.containerCheck {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px 10px;   
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    
+}
+
+
+.container input {
+    margin: 10px 10px;
+    width: calc(100% - 20px);
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ededed;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px ;
+}
+
+
+.container label {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #6d6a6a;
+    line-height: 30px;
+    padding: 10px;
+    
+}
+
+
+#check input:checked ~ label,
+#check input:valid ~ label{
+    color: #284C31;
+}
+
+#check input {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    background-color: #284C31;
+    cursor: pointer;
+    
+    
+
+}
+
+#check label {
+    width: 25px;
+    height: 25px;
+    margin: auto 0 ;
+    vertical-align: middle;
+    font-weight: 700;
+    color: #6d6a6a;
+
+}
+
+
+.botaoCriarConta {
+    
+    width: calc(50% - 10px);
+    height: 70px;
+    background-color: #284C31;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0,3s linear;
+ 
+}
+.botaoCriarConta:hover {
+    opacity: 0.85;
+
+}
+
+#check {
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+
+}
+
+form a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #6d6a6a;
+    font-weight: 700;
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+    margin-bottom: 70px;
+
+
+}
+
+form a:hover {
+    color: black;
+
+
+}
+
+@media (max-width: 768px) {
+    
+}
+
+
