@@ -21,12 +21,13 @@ window.onload = () => {
     
 }
 
-let intervalCheckCart;
 
 $(document).ready(event => {
-
+    
     atualizarQtdProdutosHeader();
+    
     // FORÇAR ATUALIZAR A QUANTIDADE NO CARRINHO NA TELA, ATE FICAR CORRETA
+    let intervalCheckCart;
     if(!intervalCheckCart) {
 
         intervalCheckCart = setInterval(() => {
