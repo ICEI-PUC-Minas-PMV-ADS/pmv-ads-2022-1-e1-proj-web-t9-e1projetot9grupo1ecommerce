@@ -38,11 +38,11 @@ function carregarProdutos() {
                 </div>
             `);
 
-            htmlProduto = htmlProduto.concat(`
-                <div class="submit-button-cart">
-                    <button type="button" class="btn-add-to-cart"> Adicionar à sacola  </button>
-                </div>
-            `);
+            // htmlProduto = htmlProduto.concat(`
+            //     <div class="submit-button-cart">
+            //         <button type="button" class="btn-add-to-cart"> Adicionar à sacola  </button>
+            //     </div>
+            // `);
         } else {
 
             htmlProduto = htmlProduto.concat(`
@@ -51,11 +51,11 @@ function carregarProdutos() {
                 </div>
             `);
 
-            htmlProduto = htmlProduto.concat(`
-                <div class="submit-button-cart">
-                    <button type="button" class="btn-add-to-cart"> Adicionar à sacola </button>
-                </div>
-            `);
+            // htmlProduto = htmlProduto.concat(`
+            //     <div class="submit-button-cart">
+            //         <button type="button" class="btn-add-to-cart"> Adicionar à sacola </button>
+            //     </div>
+            // `);
 
         }
 
