@@ -1,5 +1,13 @@
 $(document).ready(event => {
     window.localStorage.setItem('produtos', JSON.stringify(listaProdutos));
+
+    setTimeout(() => {
+        if(!window.localStorage.getItem('aceite-termos')){
+            document.querySelector(".cookie-container").classList.add("cookie-container-show")
+    
+        }
+    },2000)
+
 });
 
 /**
@@ -35,4 +43,11 @@ function enviarCadastroOfertas() {
 
     }
 
+}
+
+function fecharpopup() {
+    window.localStorage.setItem("aceite-termos", true)
+
+    const cookieContainer = document.querySelector(".cookie-container");
+    cookieContainer.classList.remove("cookie-container-show")
 }
