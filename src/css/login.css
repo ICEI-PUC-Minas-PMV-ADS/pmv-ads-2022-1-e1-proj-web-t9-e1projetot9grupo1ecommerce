@@ -142,6 +142,7 @@ main{
   margin-top: 25px;
   box-shadow: 4px 4px 4px #4d4d4d3f;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .checkbox input:checked + label:before{
