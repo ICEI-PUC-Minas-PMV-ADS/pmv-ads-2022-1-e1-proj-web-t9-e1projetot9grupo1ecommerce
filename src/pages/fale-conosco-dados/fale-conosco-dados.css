@@ -9,7 +9,8 @@
 
 .fale-conosco {
     text-align: center;
-    min-height: 550px;
+    min-height: 320px;
+    max-width: 1440px;
 }
 
 h1.Tipo {
