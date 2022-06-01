@@ -37,20 +37,7 @@
     <!-- HEADER -->
     <div id="header"></div>
 
-    <!-- div que vai ser preenchida pelo js no carrinho -->
-
-    <div class="produtos">
-        <div class="cart--item">
-            <img src="">
-            <div class="cart--item-nome">--</div>
-            <div class=" cart--item--qtarea">
-                <button class="cart--item-remover">Remover</button>
-            </div>
-        </div>
-        
-    </div>
-
-    <main class="main-other-pages-details detalhes-produto-page">
+    <main class="detalhes-produto-page">
 
         <div class="bloco-produto">
             <div class="detalhes-produto">
@@ -59,6 +46,9 @@
                         <!-- <img src="src/data-base/imagens-produtos/17.webp"> -->
                     </div>
                 </div>
+
+                <div class="separador"></div>
+
                 <div class="coluna-descritivo">
                     <div id="descricao-produto" class="descricao-produto"></div>
                     <div id="preco-produto" class="preco-produto"></div>
@@ -81,48 +71,14 @@
                 </div>
             </div>
             <div class="linha-button-comprar">
-                <button class="product--addButton" onclick="adicionarCarrinho()">Comprar</button>
+                <button onclick="adicionarCarrinho()">Comprar</button>
             </div>
-        </div>
-
-        <div class="bloco-aside">
-            <aside>
-                <!-- Área do carrinho -->
-                <div class="cart--area">
-                    <!-- Fechar carrinho -->
-                    <div class="menu-closer">
-                        <span class="material-icons close-button-cart">close</span>
-                    </div>
-                    <!-- O que aparece no carrinho -->
-                    <h1>Seus produtos</h1>
-                    <div class="cart"></div>
-                    <!-- Detalhes do carrinho -->
-                    <div class="cart--details">
-                        <div class="cart--totalitem subtotal">
-                            <span>Subtotal</span>
-                            <span>R$ --</span>
-                        </div>
-                        <div class="cart--totalitem desconto">
-                            <span>Desconto(-10%)</span>
-                            <span>R$--</span>
-                        </div>
-                        <div class="cart--totalitem total big">
-                            <span>Total</span>
-                            <span>R$--</span>
-                        </div>
-                        <a href="https://api.whatsapp.com/send?phone=5521988177200&text=Preciso%20de%20ajuda%20no%20site"><button class="cart--finalizar">Finalizar a compra</button></a>
-                       <!--  <div class="cart--finalizar">Finalizar a compra</div> -->
-                      <!--   -->
-                    </div>
-                </div>
-            </aside>
         </div>
 
     </main>
 
     <!-- FOOTER -->
     <div id="footer"></div>
-    <script src="/src/data-base/carrinho.js"></script>
 
 </body>
 </html>

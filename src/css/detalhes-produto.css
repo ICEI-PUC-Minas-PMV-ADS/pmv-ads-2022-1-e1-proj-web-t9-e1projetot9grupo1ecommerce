@@ -1,18 +1,18 @@
 .detalhes-produto-page {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    
 }
 .bloco-produto{
-    width: 75vw;
-    justify-content: center;
-    align-items: center;
     padding: 85px;
 }
 .detalhes-produto {
     display: flex;
     padding: 20px;
-    margin-top: 40px;
+}
+
+.separador {
+    width: 1px;
+    margin: 0 50px;
+    background: #565656;
 }
 
 .coluna-imagem {
@@ -64,16 +64,16 @@
 }
 
 .lista-cores li div {
-    height: 28px;
-    width: 28px;
+    height: 36px;
+    width: 36px;
     margin-right: 10px;
     border: 1px solid #8f8f8f;
 }
 
 .lista-tamanhos li div {
-    height: 28px;
-    width: 28px;
-    line-height: 26px;
+    height: 36px;
+    width: 36px;
+    line-height: 32px;
     margin-right: 10px;
     background-color: #ffffff;
     border: 1px solid #8f8f8f;
@@ -119,147 +119,5 @@
     
     .coluna-descritivo {
         width: 100%;
-    }
-}
-
-
-/*Cart*/
-
-.bloco-aside{
-    height: 100%;
-}
-.produtos{
-    display: none;
-}
-
-.cart{
-    margin-bottom: 20px
-}
-
-.cart--item{
-    display: flex;
-    align-items:center;
-    margin: 10px 0;
-    justify-content: space-between;
-}
-
-.cart--item img{
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-}
-
-.cart-item-nome{
-    flex:1;
-}
-
-.cart--item--qtarea{
-    display: inline-flex;
-    background-color: #EEE;
-    border-radius: 10px;
-    height: 30px;
-}
-
-.cart--item--qtarea button{
-    border: 0;
-    background-color: transparent;
-    font-size: 17px;
-    outline: 0;
-    cursor: pointer;
-    padding: 0px 10px;
-    color: #333;
-}
-
-.cart--item-qt{
-    line-height: 30px;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 0 5px;
-    color: #000
-}
-
-
-/*----------------*/
-
-aside{
-    height: 100%;
-    background-color: rgb(68, 134, 85);
-    width: 0vw;
-    font-family: 'Hepta Slab', Arial, Helvetica, sans-serif;
-    transition: all ease .2s; /* começa lento, rapido, lento */
-    overflow-x: hidden; /* se estourar não aparece no eixo x */
-}
-
-/* show é uma pseudoclasse que colocamos ela via javascript */
-aside.show{
-    width: 30vw;
-}
-
-.cart--area{
-    padding: 20px;
-}
-
-
-.cart--totalitem{
-    padding: 15px 0;
-    border-top: 1px solid #79B9DD;
-    color: #315970;
-    justify-content: space-between;
-    display: flex;
-    font-size: 15px;
-}
-
-.cart--totalitem span:first-child{
-    font-weight: bold;
-    color: white;
-}
-
-.cart--totalitem.big{
-    font-size: 20px;
-    color: #000;
-    font-weight: bold;
-}
-
-.cart--finalizar{
-    padding: 20px 30px;
-    border-radius: 20px;
-    background-color: #48D05F;
-    color: #FFF;
-    cursor: pointer;
-    text-align: center;
-    margin-top:20px;
-    border: 2px solid #63f77c;
-    transition: all ease .2s;
-    width: 100%;
-    font-size: 25px;
-}
-
-.cart--finalizar:hover{
-    background-color: #35af4a
-}
-
-.menu-closer{
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-}
-
-@media (max-width:840px) {
-    aside{
-        width: auto;
-        position: fixed;
-        left: 100vw;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        transition: all ease .2s;
-    }
-
-    aside.show{
-        width: auto;
-    }
-
-    .cart--area{
-        width: 100vw;
     }
 }

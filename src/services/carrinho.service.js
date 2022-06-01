@@ -19,6 +19,8 @@ async function getCarrinho(){
 
 async function saveCarrinho(carrinho) {
 
+    carrinho.quantidade = (carrinho.produtos || []).length;
+
     atualizarQtdProdutosHeader(carrinho);
 
     await window.localStorage.setItem('carrinho', JSON.stringify(carrinho));
@@ -43,5 +45,12 @@ async function atualizarQtdProdutosHeader(carrinho = null) {
 
     }
 
+}
+
+async function apagarCarrinho() {
+
+    await localStorage.removeItem('carrinho');
+
+    atualizarQtdProdutosHeader();
 
 }

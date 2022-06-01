@@ -21,6 +21,28 @@ window.onload = () => {
     
 }
 
+let intervalCheckCart;
+
+$(document).ready(event => {
+
+    atualizarQtdProdutosHeader();
+    // FORÇAR ATUALIZAR A QUANTIDADE NO CARRINHO NA TELA, ATE FICAR CORRETA
+    if(!intervalCheckCart) {
+
+        intervalCheckCart = setInterval(() => {
+
+            atualizarQtdProdutosHeader();
+            
+            let carrinho = getCarrinho();
+            if(!carrinho || (carrinho && (carrinho.produtos || []).length == document.getElementById("quantidade-produto-header").innerHTML)) {
+                clearInterval(intervalCheckCart);
+            }
+
+        }, 5000);
+    }
+    
+});
+
 // Essa função é a openMenu, está registrada num evento de onclick em um botão, essa função serve para abrir e fechar o menu
 
 function openMenu() {

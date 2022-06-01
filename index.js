@@ -1,23 +1,5 @@
-let intervalCheckCart;
-
 $(document).ready(event => {
     window.localStorage.setItem('produtos', JSON.stringify(listaProdutos));
-
-    atualizarQtdProdutosHeader();
-    // FORÇAR ATUALIZAR A QUANTIDADE NO CARRINHO NA TELA, ATE FICAR CORRETA
-    if(!intervalCheckCart) {
-
-        intervalCheckCart = setInterval(() => {
-
-            atualizarQtdProdutosHeader();
-            
-            let carrinho = getCarrinho();
-            if(!carrinho || (carrinho && (carrinho.produtos || []).length == document.getElementById("quantidade-produto-header").innerHTML)) {
-                clearInterval(intervalCheckCart);
-            }
-
-        }, 5000);
-    }
 });
 
 /**

@@ -8,7 +8,15 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
+
+    <script type="text/javascript">
+        $(document).ready(event => {
+            $("#carrinho").load("carrinho.html");
+        })
+    </script>
+
+    <script type="text/javascript" language="javascript" src="src/services/carrinho.service.js"></script>
+
 </head>
 
 <body>
@@ -31,17 +39,19 @@
 
             <div class="nav-search">
                 <form>
-                    <input type="text" name="" id="nav-search-field" placeholder="O que você procura?"
-                        autocomplete="off">
-                    <button arial-label="botão de pesquisa" for="nav-search-field" type="submit"
-                        class=" nav-search-button"><i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="" id="nav-search-field" placeholder="O que você procura?" autocomplete="off">
+                    <button arial-label="botão de pesquisa" for="nav-search-field" type="submit" class=" nav-search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
             </div>
 
             <div class="nav-icons">
-                <a class = "nav-icons-link" href="#"><i class="fa-solid fa-user"></i></a>
-                <a class = "nav-icons-link" href=""><i class="fa-solid fa-bag-shopping"></i> <span id="quantidade-produto-header">0</span></a>
+                <!-- <a class="nav-icons-link" href="#"><i class="fa-solid fa-user"></i></a> -->
+                <div id="open-cart" class="nav-icons-link">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="quantidade-produto-header">0</span>
+                </div>
 
             </div>
 
@@ -74,4 +84,6 @@
 
         </div>
     </header>
+
+    <div id="carrinho"></div>
 </body>
