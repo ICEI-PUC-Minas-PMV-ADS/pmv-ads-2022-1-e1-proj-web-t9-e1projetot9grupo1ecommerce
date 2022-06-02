@@ -42,25 +42,18 @@ async function montaListaProdutos(cart) {
         // aqui monto o item do carrinho 
         let cartItem = c('.cart--item').cloneNode(true);
 
-     
         // Imagem e nome
 
         cartItem.querySelector('.cart--item img').src = `${produtoBD.imagem}`;
         cartItem.querySelector('.cart--item-nome').innerHTML = produtoBD.descricao;
-
         cartItem.querySelector('.cart--item-tamanho').innerHTML = cart.produtos[index].tamanhoSelecionado
-    /*     cartItem.querySelector('.cart--item-cor').innerHTML = cart.produtos[index].corSelecionada
+        //
+        cartItem.querySelector('.cart--item-cor').innerHTML = (cart.produtos[index].cores.find(c => c.hexadecimal == cart.produtos[index].corSelecionada) || {}).titulo
 
- */    
-         //selectCor (cart, cartItem, index);
+        console.log("Teste" + {titulo:'teste'})
+       //pegar o objeto da cor - titulo e hexadecimal, se ele não achar eu quero que ele retorne um objeto vazio, .titulo num objeto vazio não vai retornar, ele volta sem dados
 
 
-        
-        /* cartItem.querySelector('.cart--item-tamanho').innerHTML = tamanhoSelecionado */
-        //cartItem.querySelector('.cart--item-cor')
-
-        /*<div class="cart--item-tamanho">--</div>
-            <div class="cart--item-cor">--</div> */
         cartItem.querySelector('.cart-btn-remover').innerHTML = `
             <button class="cart-item-remover" onclick="removerProduto(${index})">
                 Remover
@@ -68,33 +61,9 @@ async function montaListaProdutos(cart) {
         `;
 
         c('.cart').append(cartItem);
-
     });
-
 }
 
-/* function selectCor (cart,cartItem, index){
-
-    
-   
-    for (let i = 0; i < cart.produtos.length; i++){
-      /*   var corNome = cart.produtos.find(c=> c.hexadecimal == c.corSelecionada)
-        console.log(corNome.titulo) 
-
-
-    
-        cartItem.querySelector('.cart--item-cor').innerHTML = produto.cores[index].titulo
-
-/*         if(querySelector('.cart--item-cor')){
-            produto.cores.find(c => c.hexadecimal == c.corSelecionada).titulo
-        } */
-        //cart.produtos[index].corSelecionada
-        //produto.cores[index].titulo
-        
-    /* console.log(cart.produtos[1].corSelecionada)
-    c('.cart--item-cor').innerHTML = corNome 
-}
-},*/
 function calcularTotais(cart) {
 
     let subtotal = cart.produtos.reduce((acumulador, produto) => { return acumulador + produto.preco }, 0);
