@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 15%;
     font-weight: 700;
 }
 
@@ -42,18 +42,17 @@ body {
 
 
 .formLogin h1 {
-    padding: 40px 10px;
     text-align: center;
     font-weight: 900;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 8%;
     text-transform: uppercase;
     color: #284C31;
 }
 
 .formLogin p {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 12%;
     font-weight: 500;
     color: #6d6a6a;
 }
@@ -67,24 +66,26 @@ fieldset{
 .containerNomes {
 display: flex;
 justify-content: space-between;
+
 }
 
 
 .containerSenhas {
     display: flex;
-    padding-top: 20px;   
+    justify-content: space-between;
+    margin-bottom: 12%;  
+    
 }
 
 
 .containerCheck {
     display: flex;
     width: 100%;
-    margin-top: 20px;
     padding: 0px 10px;   
     justify-content: space-between;
     align-items: center;
     justify-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 12%;
     
 }
 
@@ -128,7 +129,7 @@ justify-content: space-between;
   
 }
 
-#check input + label::before{
+#check input + label:before{
     content: "";
     width: 25px;
     height: 25px;
@@ -137,7 +138,12 @@ justify-content: space-between;
     border-radius: 5px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 8px;  
+    margin-right: 8px;
+     
+}
+
+#check input:hover + label:before{
+    background-color: #e0dfdf;
 }
 
 
@@ -148,17 +154,21 @@ justify-content: space-between;
     font-weight: 900;
     font-size: 23px;
     color: white; 
+    background-position: center;
+    text-align: center;
+   
 }    
 
 
 #check label {
     width: 25px;
     height: 25px;
-    margin: auto 0 ;
+    margin: auto ;
     vertical-align: middle;
     font-weight: 700;
     color: #6d6a6a;
     cursor: pointer;
+    
 }
 
 
@@ -175,6 +185,14 @@ justify-content: space-between;
     transition: 0,3s linear;
  
 }
+
+
+.formLogin input:hover {
+    background-color: #e0dfdf;
+    
+    
+}
+
 
 .botaoCriarConta:hover {
     opacity: 0.85;
@@ -193,11 +211,10 @@ form a {
     font-size: 16px;
     color: #6d6a6a;
     font-weight: 700;
-    padding-top: 20px;
     text-align: center;
     display: block;
-    margin-bottom: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 15%;
+    
 }
 
 form a:hover {
@@ -206,6 +223,40 @@ form a:hover {
 }
 
 @media (max-width: 768px) {
+
+    .divBotoesLogin {
+       
+    }
+
+    .formLogin h1 {
+    
+    }
+
+    .formLogin{
+        
+        flex-direction: column;
+    }
+
+    .containerNomes{
+        flex-direction: column;
+    }
+
+    .containerCheck{
+        flex-direction: column;    
+    }
+
+    .containerSenhas {
+        flex-direction: column;
+    }
+    
+    #check {
+        min-width: 100%;
+    }
+
+    .botaoCriarConta {
+        min-width: 100%;
+        margin-top: 8%;
+    }
     
 }
 
