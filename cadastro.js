@@ -1,3 +1,4 @@
+
 function eyeClick() {
     let passwordInput = document.querySelectorAll(.password)
     let inputTypeIsPassword = passwordInput[0].type == password
