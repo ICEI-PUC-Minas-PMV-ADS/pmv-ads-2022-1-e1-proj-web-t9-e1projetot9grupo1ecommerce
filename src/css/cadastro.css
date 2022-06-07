@@ -103,6 +103,19 @@ justify-content: space-between;
     padding: 14px ;
 }
 
+.containerSenhas input {
+    position: relative;
+}
+
+.containerSenhas i {
+    font-size: 25px;
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: -4vw;
+    cursor: pointer;
+}
+
+
 
 .container label {
     text-transform: uppercase;
@@ -256,6 +269,11 @@ form a:hover {
     .botaoCriarConta {
         min-width: 100%;
         margin-top: 8%;
+    }
+
+    .containerSenhas i {
+        margin-left: -7vw;
+        
     }
     
 }

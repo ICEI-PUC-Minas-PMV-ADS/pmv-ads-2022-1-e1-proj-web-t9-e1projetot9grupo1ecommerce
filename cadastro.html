@@ -62,7 +62,7 @@
 
 
                 </fieldset>
-                <fieldset>
+                <fieldset class="containerEmail">
                     <div class="container">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" placeholder="Ex: seunome@email.com.br" required>
@@ -72,11 +72,12 @@
                 <fieldset  class="containerSenhas">
                     <div class="container">
                         <label for="senha">Senha</label>
-                        <input type="password" id="senha" name="senha" required>
+                        <input type="password" class="password" id="senha" name="senha" required>
                     </div>
                     <div class="container">
                         <label for="confirm">Comfirmar Senha</label>
-                        <input type="password" id="confirm" name="confirm" required>
+                        <input type="password" class="password" id="confirm" name="confirm" required>
+                        <span class="eye" onclick="eyeClick ()" ><i class="fa-solid fa-eye"></i></span>
                     </div>
                 </fieldset>
                 <fieldset class="containerCheck">
