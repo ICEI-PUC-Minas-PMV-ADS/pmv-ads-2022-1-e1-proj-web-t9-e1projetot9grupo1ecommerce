@@ -1,7 +1,7 @@
 
-window.onload = () => {
+$(document).ready(event =>{
     $('.icon').click(() => {
-        $(`.mobile-menu`).slideToggle("slow")
+        $(`.mobile-menu`).slideToggle('slow')
     });
 
     window.addEventListener('resize', () => {
@@ -18,8 +18,10 @@ window.onload = () => {
             }
         }
     })
-    
-}
+})
+
+
+
 
 
 $(document).ready(event => {

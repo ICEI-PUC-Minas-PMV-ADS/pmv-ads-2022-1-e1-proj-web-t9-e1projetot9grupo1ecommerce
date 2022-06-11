@@ -151,7 +151,10 @@ h1.Tipo{
     justify-items: center;
     padding: 16px;
     width: 100%; 
-    border-bottom: 1px solid white
+    border-bottom: 1px solid white;
+    align-items: center;
+    align-items: stretch;
+    
 }
  
 
@@ -213,4 +216,84 @@ footer a:active {
     text-align: center;
     padding: 3px;
 }
+
+@media (max-width: 1000px) {
+    footer {
+        min-height: 68vh;
+       
+     }
+
+
+    .bloco-cadastre-ofertas {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2vh;
+        justify-content: center;
+        flex-wrap: wrap;  
+    }
+
+
+    .form-cadastre-ofertas {
+        margin-bottom: 3vh;
+        margin-top: 3vh;  
+        flex-direction: column;  
+        display: flex;
+        padding: 0%;
+    }
+
+
+    .bloco-cadastre-ofertas input {
+        margin-bottom: 1vh;
+        margin-top: 1vh; 
+        
+              
+    }
+    #nome-cadastre-ofertas {
+        margin-right: 0%;
+    }
+
+
+   .paiInferiorFooter {
+       flex-direction: column;
+       padding: 0%;
+   }
+
+
+   .logoFooter {
+       display: none;
+   }
+
+
+   .mapafooter {
+       display: none;
+   }
+
+
+   .formasDePagamentoFooter {
+       display: none;
+   }
+
+
+   .institucionalFooter {
+       text-align: center;
+       border-bottom: 1px solid white;
+       padding-bottom: 2vh;
+   }
+
+
+   .contatosFooter {
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    margin: 0; 
+   }
+
+
+   .copy {
+       flex-wrap: wrap;
+   }
+ 
+}
+
 
