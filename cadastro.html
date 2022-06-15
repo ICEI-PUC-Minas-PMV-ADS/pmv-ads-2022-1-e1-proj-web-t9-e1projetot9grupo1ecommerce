@@ -41,7 +41,7 @@
             <div class="divBotoesLogin">
                 <a href="/index.html" class="botoesLogin"> Home </a> 
                 <span class="divider">|</span>
-                <a href="/index.html" class="botoesLogin"> Minha Conta </a>
+                <a href="/login.html" class="botoesLogin"> Minha Conta </a>
             </div>
 
             <form class="formLogin" action="#" method="post">
@@ -52,11 +52,11 @@
                 <br>
 
                 <fieldset class="containerNomes">
-                    <div class="container">
+                    <div class="container containeDuploInput">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" placeholder="Ex: Breno" required>
                     </div>
-                    <div class="container">
+                    <div class="container containeDuploInput">
                         <label for="sobrenome">Sobrenome</label>
                         <input type="text" id="sobrenome" name="sobrenome" placeholder="Ex: Lavalle Garrido" required>
                     </div>
@@ -64,21 +64,25 @@
 
                 </fieldset>
                 <fieldset class="containerEmail">
-                    <div class="container">
+                    <div class="container containerUnicoInput">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" placeholder="Ex: seunome@email.com.br" required>
                     </div>
                 </fieldset>
 
                 <fieldset  class="containerSenhas">
-                    <div class="container">
+                    <div class="container containerDuploInput">
                         <label for="senha">Senha</label>
                         <input type="password" class="password" id="senha" name="senha" required>
                     </div>
-                    <div class="container">
+                    <div class="container containerDuploInput">
                         <label for="confirm">Comfirmar Senha</label>
                         <input type="password" class="password" id="confirm" name="confirm" required>
-                        <span class="eye" onclick="eyeClick ()" ><i class="fa-solid fa-eye"></i></span>
+                        <span class="eye" onclick="eyeClick ()" >
+                            <i id="hide1" class="fa-solid fa-eye"></i>
+                            <i id="hide2" class="fa-solid fa-eye-slash"></i>
+                        </span>
+                        
                     </div>
                 </fieldset>
                 <fieldset class="containerCheck">

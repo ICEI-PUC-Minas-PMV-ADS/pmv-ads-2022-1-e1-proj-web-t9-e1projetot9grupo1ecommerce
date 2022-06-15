@@ -15,7 +15,7 @@ function carregarProdutos() {
         let htmlProduto = `
             <div id="produto-${i + 1}" class="produto" title="Visualizar produto" onclick="abrirDetalhesProduto(${produto.id})" alt="${produto.descricao}">
                 <div class="bloco-imagem">
-                    <img class="imagem-produto" src="${produto.imagem}">
+                    <img loading="lazy" class="imagem-produto" src="${produto.imagem}" alt="${produto.descricao}">
                 </div>
 
                 <h3 class="descricao-produto">

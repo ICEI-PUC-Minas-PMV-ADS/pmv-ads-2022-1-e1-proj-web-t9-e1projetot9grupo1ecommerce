@@ -82,17 +82,26 @@ justify-content: space-between;
     display: flex;
     width: 100%;
     padding: 0px 10px;   
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     justify-content: center;
     margin-bottom: 12%;
     
 }
 
+.containerUnicoInput input {
+    width: calc(100% - 20px);
+    
+
+}
+
+.containeDuploInput input {
+    width: calc(100% - 20px);
+    
+}
 
 .container input {
     margin: 10px 10px;
-    width: calc(100% - 20px);
     height: 70px;
     border: none;
     border-radius: 10px;
@@ -101,10 +110,13 @@ justify-content: space-between;
     font-size: 18px;
     font-weight: 700;
     padding: 14px ;
+    letter-spacing: 0.1ch;
 }
 
-.containerSenhas input {
+.containerSenhas  input {
     position: relative;
+    width: calc(100% - 20px);
+    
 }
 
 .containerSenhas i {
@@ -115,6 +127,9 @@ justify-content: space-between;
     cursor: pointer;
 }
 
+#hide1 {
+    visibility: hidden;
+}
 
 
 .container label {
@@ -124,6 +139,7 @@ justify-content: space-between;
     color: #6d6a6a;
     line-height: 30px;
     padding: 10px; 
+    display: block;
 }
 
 
