@@ -34,7 +34,7 @@
                 
             <form id="form-cadastre-ofertas" class="form-cadastre-ofertas">
                 <input type="text" id="nome-cadastre-ofertas" class="input-nome-cadastre-ofertas" title="Nome" placeholder="Nome"/>
-                <input type="email" id="email-cadastre-ofertas" class="input-email-cadastre-ofertas" title="E-mail" placeholder="E-mail"/>
+                <input type="email" onblur="validacaoEmail(this)" id="email-cadastre-ofertas" class="input-email-cadastre-ofertas" title="E-mail" placeholder="E-mail"/>
             </form>
     
             <button id="btn-cadastre-ofertas" class="btn-cadastre-ofertas" onclick="enviarCadastroOfertas()" title="Cadastrar">
