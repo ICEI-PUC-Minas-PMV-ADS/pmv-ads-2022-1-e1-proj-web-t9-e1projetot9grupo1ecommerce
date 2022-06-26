@@ -24,7 +24,9 @@ E-commerce de fácil usabilidade, que possibilita a venda de produtos e também 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação. 
+Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+
+Link da aplicação: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t9-e1projetot9grupo1ecommerce/
 
 # Documentação
 
@@ -42,10 +44,8 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 <li><a href="docs/11-Referências.md"> Referências</a></li>
 </ol>
 
-# Código
-
-<li><a href="src/README.md"> Código Fonte</a></li>
-
 # Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<video src="presentation/Video_Apresentacao_Ecommerce_PUC.mp4" controls>
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="presentation/Video_Apresentacao_Ecommerce_PUC.mp4">link to the video</a> instead.</p>
+</video>
