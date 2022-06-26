@@ -145,6 +145,7 @@ h1.Tipo{
 
 
 .paiInferiorFooter{
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -155,6 +156,10 @@ h1.Tipo{
     align-items: center;
     align-items: stretch;
     
+}
+
+.textosFooter {
+    margin-top: 2vh;
 }
  
 
@@ -179,6 +184,7 @@ h1.Tipo{
     display: flex;
     font-size: 16px;
     justify-items: center;
+    align-items: center;
     
 
 }
@@ -219,9 +225,13 @@ footer a:active {
 
 @media (max-width: 1000px) {
     footer {
-        min-height: 68vh;
+        min-height: 71vh;
        
      }
+     .logoFooter{
+        display: none;
+
+    }
 
 
     .bloco-cadastre-ofertas {
