@@ -36,18 +36,12 @@ function criarEventos() {
     });
 
     // INTERVAL PARA MOVER OS BANNERS
+    if (interval) clearInterval(interval);
     interval = setInterval(() => {
 
         moverSlideDireita();
 
     }, 4000)
-
-    // MATA O INTERVAL PARA NAO OCORRER DUPLICIDADE
-    $(window).on('unload', () => {
-        
-        if (interval) clearInterval(interval);
-
-    });
 
 }
 
