@@ -81,7 +81,7 @@ header {
 
 }
 
-#nav-search-field {
+#nav-search-field, #nav-search-field-mobile {
     /*  border: none;
     background-color: transparent;
     color: white;
@@ -104,7 +104,7 @@ header {
 
 }
 
-#nav-search-field::placeholder {
+#nav-search-field::placeholder, #nav-search-field-mobile::placeholder {
     color: white;
 }
 
@@ -217,7 +217,7 @@ header {
         font-size: 2rem;
     }
 
-    .nav-search-mobile #nav-search-field {
+    .nav-search-mobile #nav-search-field-mobile {
         padding-left: 15px;
         padding: 28px;
         height: 40px;
@@ -229,7 +229,7 @@ header {
 
     }
 
-    #nav-search-field::placeholder {
+    #nav-search-field::placeholder, #nav-search-field-mobile::placeholder {
         color: rgb(104, 104, 104);
         text-align: center;
     }
