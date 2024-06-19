@@ -1,0 +1,26 @@
+message: Please cite this software using these metadata.
+title: E-commerce
+authors:
+  - family-names: Ferreira De Freitas
+    given-names: Arthur 
+  - family-names: Lavalle Garrido
+    given-names: Breno 
+  - family-names: Franco Soares
+    given-names: Bruno 
+  - family-names: Ferreira Costa
+    given-names: Gabriel Aston
+  - family-names: Puddo Cardoso
+    given-names: Gabriel José
+  - family-names: Santos Andrade
+    given-names: Laura 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Monteiro Ferreira
+    given-names: Daniela Carvalho
+keywords:
+  - E-commerce
+  - Compras
+  - Vitrine
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t9-e1projetot9grupo1ecommerce
+version: 1.0.0
+date-released: 2022-06-26
